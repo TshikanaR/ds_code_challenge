@@ -1,0 +1,9 @@
+We have made the following datasets available (each filename is a link). 
+
+These are all available in an AWS bucket cct-ds-code-challenge-input-data, in the af-south-1 region, with the object name being the filenames below):
+
+•	sr.csv.gz contains 12 months of service request data, where each row is a service request. A service request is a request from one of the residents of the City of Cape Town to undertake significant work. This is an important source of information on service delivery, and our performance thereof. Note as indicated by the extension, this file is compressed.
+•	sr_hex.csv.gz contains the same data as sr.csv as well as a column h3_level8_index, which contains the appropriate resolution level 8 H3 index for that request. If the request doesn't have a valid geolocation, the index value will be 0. Note as indicated by the extension, this file is compressed.
+•	sr_hex_truncated.csv is a truncated version of sr_hex.csv, containing only 3 months of data.
+•	city-hex-polygons-8.geojson contains the H3 spatial indexing system polygons and index values for the bounds of the City of Cape Town, at resolution level 8.
+•	city-hex-polygons-8-10.geojson contains the H3 spatial indexing system polygons and index values for resolution levels 8, 9 and 10, for the City of Cape Town.
